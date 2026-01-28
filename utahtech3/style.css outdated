@@ -57,8 +57,30 @@ footer {
 }
 
 /*HomeHero image */
-.homehero-img {
-  width: 300px;
-  height: auto;
-  border-radius: 10px;
+#homehero {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    background-image: url("images/homehero.jpg");
+}
+
+/*StudentHero image */
+#homehero {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    background-image: url("images/studenthero.jpg");
+}
+
+/*studnets image */
+#homehero {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    background-image: url("images/students.jpg");
+}
+
+body {
+    background: linear-gradient(to bottom, #eeeeee, #ffffff);
+    background-attachment: fixed;
 }

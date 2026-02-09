@@ -6,7 +6,7 @@ nav a {
 }
 
 body {
-    background: linear-gradient(to bottom, #000000, #0d1952);
+    background: linear-gradient(to bottom, #000418, #0d1952);
     background-attachment: fixed;
     display: flex;
 
@@ -54,10 +54,41 @@ main {
     background-size: cover;
     background-position: center;
 
-    margin: -80px 40px 80px 40px;
+    margin: -50px 40px 100px 40px;
     /* spacing from text */
 }
 
 p {
     line-height: 1.7;
+}
+
+.mm_logo {
+    width: 115px;
+    /* set size */
+    height: 115px;
+    float: right;
+    background-image: url("images/logo_2.svg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right;
+    margin: 10px 35px 10px 30px;
+
+}
+
+header {
+    background-color: #001322, opacity: 5%;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(90, 98, 214);
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(90, 98, 214);
+    font-size: 30px;
 }

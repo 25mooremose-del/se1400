@@ -92,3 +92,216 @@ h2 {
     color: rgb(90, 98, 214);
     font-size: 30px;
 }
+
+
+
+
+
+/* General page styling 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px; */
+
+
+/* Layout wrapper */
+.song-wrapper {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.song-column {
+    padding: 0;
+    margin: 0;
+}
+
+/* Song card */
+.song-column li {
+    list-style-position: inside;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: rgb(90, 98, 214);
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.song-column li:hover {
+    transform: scale(1.03);
+}
+
+/* Album art div */
+.album {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    margin-right: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Individual album images */
+.album1 {
+    background-image: url("images/killers.png");
+}
+
+.album2 {
+    background-image: url("images/party_girl.png");
+}
+
+.album3 {
+    background-image: url("images/greenday_ai.png");
+}
+
+.album4 {
+    background-image: url("images/creep.png");
+}
+
+.album5 {
+    background-image: url("images/greenday_ai.png");
+}
+
+.album6 {
+    background-image: url("images/buddy_holly.jpg");
+}
+
+.album7 {
+    background-image: url("images/stolen_dance.jpg");
+}
+
+.album8 {
+    background-image: url("images/family_ties.png");
+}
+
+.album9 {
+    background-image: url("images/iris.jpg");
+}
+
+.album10 {
+    background-image: url("images/greenday_dookie.jpg");
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .song-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*media now */
+/* Layout wrapper */
+.media-wrapper {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.movie-column {
+    padding: 0;
+    margin: 0;
+}
+
+
+.movie-column li {
+    list-style-position: inside;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: rgb(90, 98, 214);
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.movie-column li:hover {
+    transform: scale(1.03);
+}
+
+/* Album art div */
+.poster {
+    width: 70px;
+    height: 100px;
+    border-radius: 8px;
+    margin-right: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Individual album images */
+.poster1 {
+    background-image: url("images/Ferris_Bueller's_Day_Off.jpg");
+}
+
+.poster2 {
+    background-image: url("images/Napoleon_dynamite_post.jpg");
+}
+
+.poster3 {
+    background-image: url("images/zoolander.jpg");
+}
+
+.poster4 {
+    background-image: url("images/Cars_2_Poster.jpg");
+}
+
+.poster5 {
+    background-image: url("images/The_Fall_Guy_\(2024\)_poster.jpg");
+}
+
+.poster6 {
+    background-image: url("images/Tommy_Boy.jpg");
+}
+
+.poster7 {
+    background-image: url("images/Nacho_Libre_poster.jpg");
+}
+
+.poster8 {
+    background-image: url("images/Happygilmoreposter.jpg");
+}
+
+.poster9 {
+    background-image: url("images/Tower-heist-movie-poster.jpg");
+}
+
+.poster10 {
+    background-image: url("images/Jumanji_Welcome_to_the_Jungle.png");
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .movie-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+.image-row {
+  display: flex;
+  justify-content: center;   /* centers the whole row */
+  gap: 40px;                 /* equal spacing between items */
+  margin-top: 60px;
+}
+
+.card {
+  text-align: center;        /* centers text under image */
+}
+
+.card img {
+  width: 150px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px; /* optional but nice */
+}

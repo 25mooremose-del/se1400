@@ -288,20 +288,25 @@ h1 {
         grid-template-columns: 1fr;
     }
 }
+
 .image-row {
-  display: flex;
-  justify-content: center;   /* centers the whole row */
-  gap: 40px;                 /* equal spacing between items */
-  margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    /* centers the whole row */
+    gap: 40px;
+    /* equal spacing between items */
+    margin-top: 60px;
 }
 
 .card {
-  text-align: center;        /* centers text under image */
+    text-align: center;
+    /* centers text under image */
 }
 
 .card img {
-  width: 150px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 8px; /* optional but nice */
+    width: 150px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    /* optional but nice */
 }

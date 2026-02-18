@@ -93,6 +93,10 @@ h2 {
     font-size: 30px;
 }
 
+h7 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(90, 98, 214);
+}
 
 
 
@@ -304,6 +308,19 @@ h1 {
 }
 
 .card img {
+    width: 150px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    /* optional but nice */
+}
+
+.card2 {
+    text-align: center;
+    /* centers text under image */
+}
+
+.card2 img {
     width: 150px;
     height: 250px;
     object-fit: cover;

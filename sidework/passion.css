@@ -3,6 +3,8 @@ nav a {
     font-weight: bold;
     text-decoration: none;
     align-items: center;
+    color: #4800bb;
+    font-size: larger;
 }
 
 body {
@@ -65,9 +67,10 @@ p {
 }
 
 header {
-    background-color: rgba(0, 19, 34, 0.5);
+    background-color: rgba(52, 58, 145, 0.3);
     color: #FFFFFF;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 12px;
 }
 
 header {

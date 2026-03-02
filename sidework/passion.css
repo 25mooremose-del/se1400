@@ -196,6 +196,30 @@ h1 {
     background-image: url("images/greenday_dookie.jpg");
 }
 
+.GPalbum1 {
+    background-image: url("images/gp1.jpg");
+}
+
+.GPalbum2 {
+    background-image: url("images/gp2.png");
+}
+
+.GPalbum3 {
+    background-image: url("images/gp3.png");
+}
+
+.GPalbum4 {
+    background-image: url("images/gp4.png");
+}
+
+.GPalbum5 {
+    background-image: url("images/gp5.png");
+}
+
+.GPalbum6 {
+    background-image: url("images/gp6.png");
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .song-wrapper {

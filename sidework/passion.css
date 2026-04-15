@@ -1,161 +1,164 @@
-/* bolds text*/
-nav a {
-    font-weight: bold;
-    text-decoration: none;
-    align-items: center;
-    color: #4800bb;
-    font-size: larger;
+/* ================= css ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* ================= BODY ================= */
+
 body {
+    font-family: Verdana, Arial, sans-serif;
     background: linear-gradient(to bottom, #000418, #0d1952);
     background-attachment: fixed;
-
-
-
-}
-
-/* Global styles */
-body {
-
     color: #ffffff;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    line-height: 1.6;
 }
 
-/* header content */
-header {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    align-self: center;
-}
+/* ================= WRAPPER ================= */
 
-/* Main content */
-main {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-/* Wrapper container */
 #wrapper {
-    background-color: #000000;
-    width: 75%;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 2rem;
-    box-sizing: border-box;
-
-    display: grid;
-    grid-template-rows: auto 1fr;
-    gap: 40px;
+    background: #000000;
 }
 
-
-
-
-p {
-    line-height: 1.7;
-}
-
-.mm_logo {
-    grid-column: 2;
-    grid-row: 1 / span 3;
-    width: 115px;
-    height: 115px;
-    background-image: url("images/logo_2.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
+/* ================= HEADER ================= */
 
 header {
-    background-color: rgba(52, 58, 145, 0.3);
-    color: #FFFFFF;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border-radius: 12px;
+    text-align: center;
+    padding: 20px 0;
 }
 
-header {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-rows: auto auto auto;
-    align-items: center;
-    padding: 1rem;
+/* ================= NAV ================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
+
+nav a {
+    color: #4800bb;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: 0.2s ease;
+}
+
+nav a:hover {
+    color: #7aa2ff;
+    transform: scale(1.05);
+}
+
+/* ================= TEXT ================= */
 
 h1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgb(90, 98, 214);
     font-size: 40px;
 }
 
 h2 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgb(90, 98, 214);
     font-size: 30px;
 }
 
-h7 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(90, 98, 214);
+h3 {
+    color: #a6b6ff;
 }
 
-
-
-
-/* General page styling 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 40px;
+p {
+    margin-bottom: 10px;
 }
 
-h1 {
-  text-align: center;
-  margin-bottom: 40px; */
+/* ================= IMAGES ================= */
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
 
-/* Layout wrapper */
-.song-wrapper {
-    max-width: 1000px;
-    margin: auto;
+/* ================= GRID SYSTEM ================= */
+
+.song-wrapper,
+.media-wrapper,
+.about-grid,
+.gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 40px;
 }
 
-.song-column {
-    padding: 0;
-    margin: 0;
+/* desktop layout restored */
+.song-wrapper,
+.media-wrapper {
+    grid-template-columns: 1fr 1fr;
 }
 
-/* Song card */
-.song-column li {
-    list-style-position: inside;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+.about-grid {
+    grid-template-columns: 2fr 1fr;
+}
+
+.gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* ================= LIST ITEMS ================= */
+
+.song-column li,
+.movie-column li {
+    list-style: none;
     background: rgb(90, 98, 214);
     padding: 12px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
     transition: transform 0.2s ease;
 }
 
-.song-column li:hover {
+.song-column li:hover,
+.movie-column li:hover {
     transform: scale(1.03);
 }
 
-/* Album art div */
+/* ================= MEDIA IMAGES ================= */
+
 .album {
     width: 70px;
     height: 70px;
     border-radius: 8px;
-    margin-right: 15px;
-    background-size: cover;
+    flex-shrink: 0;
+
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
+
+    background-color: #4800bb;
 }
 
-/* Individual album images */
+.poster {
+    width: 70px;
+    height: 100px;
+    border-radius: 8px;
+    flex-shrink: 0;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-color: #4800bb;
+}
+
+
+/* ===== ALBUM IMAGES ===== */
 .album1 {
     background-image: url("images/killers.png");
 }
@@ -196,6 +199,7 @@ h1 {
     background-image: url("images/greenday_dookie.jpg");
 }
 
+/* ===== GUILTY PLEASURE ===== */
 .GPalbum1 {
     background-image: url("images/gp1.jpg");
 }
@@ -220,56 +224,7 @@ h1 {
     background-image: url("images/gp6.png");
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .song-wrapper {
-        grid-template-columns: 1fr;
-    }
-}
-
-/*media now */
-/* Layout wrapper */
-.media-wrapper {
-    max-width: 1000px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-}
-
-.movie-column {
-    padding: 0;
-    margin: 0;
-}
-
-
-.movie-column li {
-    list-style-position: inside;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    background: rgb(90, 98, 214);
-    padding: 12px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    transition: transform 0.2s ease;
-}
-
-.movie-column li:hover {
-    transform: scale(1.03);
-}
-
-/* Album art div */
-.poster {
-    width: 70px;
-    height: 100px;
-    border-radius: 8px;
-    margin-right: 15px;
-    background-size: cover;
-    background-position: center;
-}
-
-/* Individual album images */
+/* ===== MOVIE POSTERS ===== */
 .poster1 {
     background-image: url("images/Ferris_Bueller's_Day_Off.jpg");
 }
@@ -287,7 +242,7 @@ h1 {
 }
 
 .poster5 {
-    background-image: url("images/The_Fall_Guy_\(2024\)_poster.jpg");
+    background-image: url("images/The_Fall_Guy_(2024)_poster.jpg");
 }
 
 .poster6 {
@@ -310,104 +265,92 @@ h1 {
     background-image: url("images/goat movie.jpg");
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .movie-wrapper {
-        grid-template-columns: 1fr;
-    }
-}
-
-.image-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;
-    margin-top: 60px;
-    text-align: center;
-}
-
-.card {
-    text-align: center;
-    /* centers text under image */
-}
-
-.card img {
-    width: 150px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-    /* optional but nice */
-}
-
-.card2 {
-    text-align: center;
-    /* centers text under image */
-}
-
-.card2 img {
-    width: 150px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-    /* optional but nice */
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    padding: 20px;
-}
+/* ================= GALLERY ================= */
 
 .gallery img {
     width: 100%;
     height: 250px;
     object-fit: cover;
     border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .gallery img:hover {
-    transform: scale(1.2);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transform: scale(1.08);
 }
 
-/* Grid layout for about section */
-.about-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    /* text = 2 parts, image = 1 part */
-    gap: 40px;
-    align-items: start;
-    margin-bottom: 40px;
-}
 
-/* Left text column */
-.about-text p {
-    line-height: 1.7;
-}
 
-/* Right image column */
-.image-wrap {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 3 / 4;
-    /* keeps image proportion correct */
-    background-image: url("images/white.jpeg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 12px;
-}
+@media (max-width: 768px) {
 
-/* Make grid responsive */
-@media (max-width: 900px) {
+    .song-wrapper,
+    .media-wrapper,
     .about-grid {
         grid-template-columns: 1fr;
-        /* stack on small screens */
+        gap: 20px;
     }
 
-    .image-wrap {
-        width: 100%;
-        height: 400px;
-        aspect-ratio: auto;
+    nav {
+        flex-direction: column;
+        align-items: center;
     }
+}
+
+.song-column li,
+.movie-column li {
+    align-items: center;
+}
+
+.song-column li,
+.movie-column li {
+    margin-bottom: 10px;
+}
+
+.album,
+.poster {
+    flex-shrink: 0;
+}
+
+.song-column li span,
+.movie-column li span {
+    display: block;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+
+    .song-column li,
+    .movie-column li {
+        gap: 10px;
+    }
+}
+
+.image-wrap {
+    background-image: url("images/white.jpeg");
+}
+
+
+.card img,
+.card2 img {
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 200px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: nowrap;
+}
+
+@media (max-width: 768px) {
+    .image-row flex-wrap: wrap;
+    justify-content: center;
 }

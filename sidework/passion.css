@@ -126,7 +126,7 @@ img {
 
 .song-column li:hover,
 .movie-column li:hover {
-    transform: scale(1.03);
+    transform: scale(1.09);
 }
 
 /* ================= MEDIA IMAGES ================= */
@@ -276,7 +276,7 @@ img {
 }
 
 .gallery img:hover {
-    transform: scale(1.08);
+    transform: scale(1.25);
 }
 
 
@@ -326,19 +326,25 @@ img {
 }
 
 .image-wrap {
-    background-image: url("images/white.jpeg");
+    background-image: url("images/index.jpeg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
 .card img,
 .card2 img {
-    width: 200px;
+    height: 250px;
     object-fit: cover;
     border-radius: 10px;
     display: block;
     margin: 0 auto;
+}
+
+.card {
     text-align: center;
-    max-width: 200px;
+    max-width: 220px;
 }
 
 .image-row {
@@ -351,6 +357,8 @@ img {
 }
 
 @media (max-width: 768px) {
-    .image-row flex-wrap: wrap;
-    justify-content: center;
+    .image-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

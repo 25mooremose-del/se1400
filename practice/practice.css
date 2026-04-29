@@ -1,0 +1,23 @@
+#wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #ffa149;
+}
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+    background: linear-gradient(to bottom, #00ff00, #3e8000);
+    background-attachment: fixed;
+    color: #1f5709;
+    line-height: 1.6;
+}
+
+.carrot-pic {
+    background-image: url("practice-images/carrot.png");
+    width: 300px;
+    height: 200px;;
+    background-size: cover;
+    background-position: center;
+}
